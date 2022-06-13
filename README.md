@@ -6,6 +6,9 @@ Portfolio built using React.
 
  - [React.Js](https://reactjs.org/docs/getting-started.html)
 
+## Demo
+ - [Porfolio](https://delightful-choux-c5cca0.netlify.app/)
+
 ## Feedback
 
 If you have any query or suggetions please reach me out at rushilkoundal1611@gmail.com.
