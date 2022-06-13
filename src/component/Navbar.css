@@ -1,0 +1,149 @@
+.navbar {
+    height: 10vh;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.logo {
+    font-family: var(--logo);
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logo span {
+    color: var(--pink-color);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.nav-menu.active {
+    background: var(--primary-color);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-item {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    color: #fff;
+    font-family: var(--menu);
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 5vh;
+    margin-top: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: var(--pink-color);
+    transition: all 0.3s ease;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    color: #fff;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.social-links-desktop {
+    display: none;
+}
+
+.menu-links ul {
+    display: none;
+}
+
+/*dark mode */
+
+.navbar__dark {
+    height: 10vh;
+    background: #4C3575;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.nav-menu-dark {
+    background: #4C3575;
+}
+
+/*media query*/
+@media screen and (min-width: 800px) {
+    .logo {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-links ul{
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-family: var(--menu);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .menu-links ul li {
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .menu-links ul li:hover {
+        color: var(--pink-color);
+    }
+
+    .navbar-desktop {
+        display: flex;
+    }
+
+    .navbar, .navbar__dark {
+        flex: 2;
+    }
+
+    .social-links-desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+}
+
+@media only screen and (min-width: 1530px) {
+    .logo {
+        font-size: 4rem;
+    }
+
+    .menu-links ul li {
+        font-size: 1.5rem;
+    }
+}

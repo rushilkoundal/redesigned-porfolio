@@ -1,0 +1,105 @@
+.contact {
+    background: var(--secondary-color);
+    height: 90vh;
+    padding: 2% 0 5% 5%;
+}
+
+.contact span, .contact__dark span {
+    color: var(--pink-color);
+}
+
+.contact h1, .contact__dark h1 {
+    font-family: var(--general);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.contact h3, .contact__dark h3 {
+    font-family: var(--general);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contact p, .contact__dark p {
+    font-family: var(--general);
+    color: #fff;
+    margin-bottom: 10px;
+    max-width: 600px;
+    width: 80%;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.inputs {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 48% 45%;
+}
+
+form input,
+textarea {
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+    width: 100%;
+    margin-bottom: 8px;
+    font-family: var(--general);
+}
+
+form input {
+    height: 40px;
+}
+
+.contact button, .contact__dark button {
+    border: none;
+    outline: none;
+    background: var(--pink-color);
+    color: #fff;
+    height: 40px;
+    font-family: var(--general);
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.contact button:hover, .contact__dark button:hover {
+    background: var(--primary-color);
+    color: var(--pink-color);
+    transition: all .5s ease;
+}
+
+/*dark mode*/
+.contact__dark {
+    background: #371B58;
+    height: 90vh;
+    padding: 2% 0 5% 5%;
+}
+
+/*media query*/
+@media screen and (min-width: 800px) {
+    .inputs {
+        grid-template-columns: 44% 51%;
+    }
+}
+
+@media screen and (min-width: 1530px) {
+    .contact h1, .contact__dark h1 {
+        font-size: 5rem;
+    }
+
+    .contact p, .contact__dark p {
+        font-size: 1.5rem;
+    }
+
+    .contact h3, .contact__dark h3{
+        font-size: 2.8rem;
+    }
+}

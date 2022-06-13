@@ -1,0 +1,28 @@
+.workList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+}
+
+.workList__title {
+    font-family: var(--general);
+    text-transform: capitalize;
+}
+
+.workList__title h1 {
+    font-size: 2.5rem;
+}
+
+.workList__title p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.workList__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
