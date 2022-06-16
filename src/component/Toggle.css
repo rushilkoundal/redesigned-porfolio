@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: space-around;
     border: 1px solid white;
+    z-index: 11;
 }
 
 .toggle__icon {

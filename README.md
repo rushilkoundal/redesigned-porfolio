@@ -2,6 +2,8 @@
 # Porfolio
 Portfolio built using React.
 
+For Animation I used [AOS](https://github.com/michalsnik/aos) library.
+
 ## Acknowledgements
 
  - [React.Js](https://reactjs.org/docs/getting-started.html)

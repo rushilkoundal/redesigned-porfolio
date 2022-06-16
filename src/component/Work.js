@@ -20,8 +20,8 @@ function Work({ img, title, desc }) {
 
     return (
         <>
-            <div className='work'>
-                <img onClick={() => getData(img, title, desc)}  src={img} alt='img' />
+            <div data-aos='fade-up' data-aos-delay='300'  className='work'>
+                <img onClick={() => getData(img, title, desc)} src={img} alt='img' />
             </div>
             {modal ? <Modal img={tempData[1]} title={tempData[2]} desc={tempData[3]} setModal={setModal} /> : null}
         </>

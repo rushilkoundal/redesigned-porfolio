@@ -26,11 +26,11 @@ function Contact({ Contact }) {
     }
 
     return (
-        <div ref={Contact} className={darkMode ? 'contact__dark' : 'contact'}>
-            <h1>Contact <span>Me</span></h1>
-            <p>I am interested in working opportunity. However, if you have any request or questions or you need work for charity.</p>
-            <h3>Just drop me a line!</h3>
-            <form ref={formRef} onSubmit={handleClick}>
+        <div data-aos='fade-up' ref={Contact} className={darkMode ? 'contact__dark' : 'contact'}>
+            <h1 data-aos='fade-up' data-aos-delay='100'>Contact <span>Me</span></h1>
+            <p data-aos='fade-up' data-aos-delay='200'>I am interested in working opportunity. However, if you have any request or questions or you need work for charity.</p>
+            <h3 data-aos='fade-up' data-aos-delay='300'>Just drop me a line!</h3>
+            <form data-aos='fade-up' data-aos-delay='400' ref={formRef} onSubmit={handleClick}>
                 <div className="inputs">
                     <input value={name} onChange={(e) => setName(e.target.value)} className='input-group' type="text" placeholder='Name' required name='user_name' />
                     <input value={email} onChange={(e) => setEmail(e.target.value)} className='input-group' type="email" placeholder='Email' required name='user_email' />

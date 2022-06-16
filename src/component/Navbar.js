@@ -19,9 +19,9 @@ function Navbar({ setShow, scrollToSection, work, about, Contact }) {
     return (
         <>
             <div className="navbar-desktop">
-                <div className={darkMode ? 'navbar__dark' : 'navbar'}>
-                    <div onClick={() => setShow(false)} className="logo">rk<span>design</span></div>
-                    <div className="menu-links">
+                <div data-aos='fade-up' data-aos-duration='500' className={darkMode ? 'navbar__dark' : 'navbar'}>
+                    <div data-aos='fade-right' onClick={() => setShow(false)} className="logo">rk<span>design</span></div>
+                    <div data-aos='fade-left' className="menu-links">
                         <ul>
                             <li onClick={() => scrollToSection(work)}>Work</li>
                             <li onClick={() => {
@@ -33,7 +33,7 @@ function Navbar({ setShow, scrollToSection, work, about, Contact }) {
                     </div>
                     <div className='menu-icon' onClick={() => setToggle(!toggle)}>{toggle ? <CloseRoundedIcon fontSize='large' style={{ color: '#fff' }} /> : <SortRoundedIcon fontSize='large' style={{ color: 'white', cursor: 'pointer' }} />}</div>
                 </div>
-                <div className="social-links-desktop">
+                <div data-aos='fade-up' className="social-links-desktop">
                     <a href="https://github.com/rushilkoundal" target='_blank' rel='noreferrer'><GitHubIcon fontSize='large' style={{ marginRight: '10px' }} /></a>
                     <a href="https://www.linkedin.com/in/rushil-koundal-14939b183/" target='_blank' rel='noreferrer'><LinkedInIcon fontSize='large' /></a>
                 </div>
