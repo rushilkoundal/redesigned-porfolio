@@ -29,7 +29,7 @@ function Contact({ Contact }) {
     const formRef = useRef();
     const handleClick = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_56011h6', 'template_0csp5cy', formRef.current, 'sEx0da4C17zgodqyI2')
+        emailjs.sendForm('service_56011h6', 'template_0csp5cy', formRef.current, 'sEx0da4C17zgodqyI')
             .then((result) => {
                 console.log(result.text);
                 if (result) setShow(true)
@@ -53,7 +53,7 @@ function Contact({ Contact }) {
                     </div>
                     <input value={subject} onChange={(e) => setSubject(e.target.value)} type="text" placeholder='Subject' name='user_subject' />
                     <textarea value={message} onChange={(e) => setMessage(e.target.value)} required placeholder='Message' name="user_message" id="" cols="30" rows="10"></textarea>
-                    <div style={{display: 'flex'}}><button>Send Message</button> <span>{error ? (<p style={{fontSize: '1rem', marginLeft: '10px'}}>Ooops!!, Your eamil is not sent. Please try again</p>) : null}</span></div>
+                    <div style={{display: 'flex'}}><button>Send Message</button> <span>{error ? (<p style={{fontSize: '0.8rem', marginLeft: '10px'}}>Ooops!!, Your eamil is not sent. Please try again</p>) : null}</span></div>
                 </form>
             )}
         </div>
