@@ -9,7 +9,7 @@ For Animation I used [AOS](https://github.com/michalsnik/aos) library.
  - [React.Js](https://reactjs.org/docs/getting-started.html)
 
 ## Demo
- - Link to: [Porfolio](https://delightful-choux-c5cca0.netlify.app/)
+ - Link to: [Porfolio](https://rkdesign.netlify.app/)
 
 ## Feedback
 
